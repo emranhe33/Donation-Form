@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="image's/icon/0-donate-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
     <style>
-        .star-red{
+        .star-red {
             color: red;
         }
     </style>
@@ -22,37 +22,48 @@
         <section id="container">
             <img src="image's/icon/donate-icon.jpg" alt="">
 
-        <h1>Donation Form</h1>
-        <p>Thanks for donating to our cause</p>
-        <form>
+            <h1>Donation Form</h1>
+            <p>Thanks for donating to our cause</p>
+            <form action="" method="post">
 
-            <label for="name">Name<span class="star-red">*</span></label> <br>
-            <input type="text" id="name">
+                <div class="input-box">
+                    <label for="name">Name<span class="star-red">*</span></label>
+                    <input type="text" placeholder="" name="first-name">
+                    <input type="text" placeholder="" name="last-name">
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email<span class="star-red">*</span></label>
+                    <input type="email" name="email" id="">
+                </div>
+
+                <div class="input-box">
+                    <label for="How mutch monye">How much would you like to donate ?</label>
+                    <input type="number" name="money" id="">
+                </div>
 
 
-            <input type="text" id="name">
-            <br>
-            <label for="email">Email<span class="star-red">*</span></label> <br>
-            <input type="email" name="email" id="">
-            <br>
-            <label for="How mutch monye">How much would you like to donate ?</label> <br>
-            <input type="number" name="monye" id="">
-            <br>
-            <label for="like to">Hoe would you like to donate?<span class="star-red">*</span></label><br>
-            <select name="" id="">
-                <option value="hobby">Hobby</option>
-                <option value="like">Like That</option>
-            </select>
-            <br>
+                <div class="input-box">
+                    <label for="like to">Hoe would you like to donate?<span class="star-red">*</span></label><br>
+                    <select name="" id="">
+                        <option value="like">Like That</option>
+                        <option value="hobby" selected>Hobby</option>
+                    </select>
+                </div>
 
-            <input type="checkbox" name="" id=""> <label for="agree">I agree to make a donation, and proceed to pay.<span class="star-red">*</span></label>
-            <br>
 
-            <input type="button" id="button" value="Proceed">
+                <div class="input-box">
+                    <input type="checkbox" name="" id="">
+                    <label for="agree">I agree to make a donation, and proceed to
+                        pay.<span class="star-red">*</span></label>
+                </div>
 
-        
 
-        </form>
+                <input type="button" id="button" value="Proceed">
+
+
+
+            </form>
         </section>
     </main>
     <footer>
